@@ -1,3 +1,150 @@
-body {
-  padding-top: 50px;
+body{
+  font-weight: 300;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-color: #91acd9;
+}
+a:hover{
+  color: #91acd9;
+}
+.container{
+  width: 100%;
+  padding:0;
+}
+.login_title{
+  color: white;
+}
+
+.navbar-header{
+  background-color: #FCFCFF;
+  height: 100px;
+  width: 100%;
+  padding: 15px;
+  vertical-align: middle;
+  margin: 0;
+}
+.container>.navbar-header {
+  width:100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+.navbar-brand{
+  font-family: 'Monoton',cursive;
+  font-size: 65px;
+  color: white;
+  position: absolute;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  margin: 0px;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.listload{
+  width: 100%;
+  margin: 0 auto;
+}
+.mid-section{
+  height: 400px;
+  background-image: url("/images/mid_background.png");
+  background-size: cover;
+
+}
+#headings{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size:50px;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+}
+.subtitles{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size:50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.subtitles2{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size:30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+ul {
+  height: 50px;
+  font-family: 'Poppins', cursive;
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #495c7f;
+}
+ul li ul:hover{
+  height: 50px;
+  font-family: 'Poppins', cursive;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #495c7f;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #495c7f;
+}
+
+#regform{
+  margin-top: 50px;
+  width: 700px;
+}
+.content{
+  width: 99%;
+  background-color: #b0c9f8;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  height: 1000px;
+  background-size: cover;
+}
+
+.content-title{
+  width: 600px;
+  height: 70px;
+  background: linear-gradient(to right, #6f89a4 , #91acd9);
+  padding-top: 10px;
+
+}
+
+#login{
+  float: right;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+#login_submit{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
