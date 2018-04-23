@@ -19,8 +19,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body><a class="navbar-brand" href="/">ComCar</a>
-    <!--<nav class="navbar navbar-inverse navbar-fixed-top">
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,12 +35,10 @@
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
           </ul>
-        </div><!--/.nav-collapse
+        </div><!--/.nav-collapse -->
       </div>
-    </nav>-->
-  <div class="container">
-      <div class="navbar-header">
-      </div>
-  </div>
+    </nav>
+
+    <div class="container">
 
     <h1><?= $heading ?></h1>
