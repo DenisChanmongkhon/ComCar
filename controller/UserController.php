@@ -1,6 +1,6 @@
 <?php
 
-require_once '../repository/UserRepository.php';
+require_once '../repository/CarRepository.php';
 
 /**
  * Siehe Dokumentation im DefaultController.

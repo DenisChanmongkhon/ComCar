@@ -163,3 +163,8 @@ li a:hover {
   float: right;
   margin-right: 100px;
 }
+.showmore {
+  float: right;
+  width: 30px;
+  height: 30px;
+}

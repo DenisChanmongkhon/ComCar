@@ -7,13 +7,14 @@ require_once '../lib/Repository.php';
  *
  * Die Ausführliche Dokumentation zu Repositories findest du in der Repository Klasse.
  */
-class UserRepository extends Repository
+class CarRepository extends Repository
 {
     /**
      * Diese Variable wird von der Klasse Repository verwendet, um generische
      * Funktionen zur Verfügung zu stellen.
      */
-    protected $tableName = 'user';
+    protected $tableName = 'cars';
+    protected $id = 'id';
 
     /**
      * Erstellt einen neuen benutzer mit den gegebenen Werten.
@@ -28,19 +29,48 @@ class UserRepository extends Repository
      *
      * @throws Exception falls das Ausführen des Statements fehlschlägt
      */
-    public function create($firstName, $lastName, $email, $password)
+    /*public function create($firstName, $lastName, $email, $password)
     {
         $password = sha1($password);
 
-        $query = "INSERT INTO $this->tableName (firstName, lastName, email, password) VALUES (?, ?, ?, ?)";
+        $query = "INSERT INTO $this->tableName (price, ps, topspeed, 0to100, fuel, seats, brandname, model) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         $statement = ConnectionHandler::getConnection()->prepare($query);
-        $statement->bind_param('ssss', $firstName, $lastName, $email, $password);
+        $statement->bind_param('ssssssss', $firstName, $lastName, $email, $password);
 
         if (!$statement->execute()) {
             throw new Exception($statement->error);
         }
 
         return $statement->insert_id;
+    }*/
+
+    public function display()
+    {
+        $brandname = $_POST['brandname'];
+        $model = $_POST['model'];
+        $query = "SELECT password FROM $this->tableName WHERE brandname = ? AND model = ?";
+        $statement = ConnectionHandler::getConnection()->prepare($query);
+
+        $statement->bind_param('ss', $brandname, $model);
+
+        if (!$statement->execute()) {
+            throw new Exception($statement->error);
+        }
+
+        $result = $statement->get_result();
+
+        if($result->num_rows == 0){
+            return false;
+        }
+
+        $user = $result->fetch_object();
+        if(password_verify($password,$user->password)){
+
+            return true;
+        }
+
+        return false;
+
     }
 }

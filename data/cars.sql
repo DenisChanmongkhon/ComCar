@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cars` (
   `id` int(11) NOT NULL,
+  `path` varchar(50) NOT NULL,
   `price` int(50) NOT NULL,
   `ps` int(50) NOT NULL,
   `topspeed` int(50) NOT NULL,
@@ -64,3 +65,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `cars` (`id`,`path`, `price`, `ps`, `topspeed`, `0to100`, `fuel`, `seats`, `brandname`, `model`) VALUES (NULL,'images/huracan.png', '250000', '351', '450', '0.2', '90', '2', 'Porshe', 'madafakaX3');

@@ -40,5 +40,6 @@ class DefaultController
         $view->title = 'ComCar';
         $view->heading = 'Main Page';
         $view->display();
+
     }
 }
