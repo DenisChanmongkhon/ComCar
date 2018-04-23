@@ -4,10 +4,10 @@ body{
   min-height: 100vh;
   width: 100%;
   padding: 0;
-  background-color: #91acd9;
+  background-color: #E7E7EA;
 }
 a:hover{
-  color: #91acd9;
+  color: #E7E7EA;
 }
 .container{
   width: 100%;
@@ -23,7 +23,12 @@ a:hover{
   width: 100%;
   padding: 15px;
   vertical-align: middle;
-  margin: 0;
+  margin-right: 50%;
+  margin-left: 50%;
+}
+.navbar-collapse collapse in{
+  background-color: #E7E7EA;
+
 }
 .container>.navbar-header {
   width:100%;
@@ -90,7 +95,8 @@ ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-color: #495c7f;
+  background-color: #A9A9AC;
+  color:black;
 }
 ul li ul:hover{
   height: 50px;
@@ -99,7 +105,7 @@ ul li ul:hover{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #495c7f;
+  background-color: black;
 }
 li {
   float: left;
@@ -107,14 +113,14 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 10px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #495c7f;
+  background-color: #A9A9AC;
 }
 
 #regform{
@@ -123,7 +129,7 @@ li a:hover {
 }
 .content{
   width: 99%;
-  background-color: #b0c9f8;
+  background-color: #FCFCFF;
   margin-left: 0.5%;
   margin-right: 0.5%;
   height: 1000px;
@@ -133,7 +139,7 @@ li a:hover {
 .content-title{
   width: 600px;
   height: 70px;
-  background: linear-gradient(to right, #6f89a4 , #91acd9);
+  background: linear-gradient(to right, #A9A9AC , #FCFCFF);
   padding-top: 10px;
 
 }
