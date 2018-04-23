@@ -13,6 +13,7 @@
 
     <!-- Custom styles for this template -->
       <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
       <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
