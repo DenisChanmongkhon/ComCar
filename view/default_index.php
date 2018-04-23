@@ -6,6 +6,11 @@
                             <img src="/images/huracan.png" alt="pic couldnt load" style="width:330px" />
                         </a>
                         </div>
+                        <div class="hidden">
+                            <a data-fancybox="gallery" href="../images/special.png">
+                                <img src="../images/special.png" alt=""/>
+                            </a>
+                        </div>
                         <h1> #carname</h1>
 
                     </div>
