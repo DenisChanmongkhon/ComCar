@@ -24,15 +24,24 @@
                         </select>
                         <?php
                         echo '
-                        <table>
-                            <tr>
-                                <td>Brand</td>
-                                <td>Model</td>
-                            </tr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th>Model</th>
+                                    <th>Price</th>
+                                    <th>PS</th>
+                                    <th>Topspeed</th>
+                                    <th>0 to 100</th>
+                                    <th>Fuel</th>
+                                    <th>Seats</th>
+                                    
+                                </tr>   
+                            </thead>
                             <tr>
                                 <td>'.$brandname["brandname"].'</td>
                                 <td>'.$model["model"].'</td>
-                            </tr>
+                            </tr>                   
                         </table>
                         ';
                         ?>
