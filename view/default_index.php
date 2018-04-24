@@ -76,48 +76,48 @@
                              <tbody>
                                  <tr>
                                      <td><b>Brandname</td>
-                                     <th>'.$car->brandname;'</th>
+                                     <th>' .$car->brandname . '</th>
                                  </tr>
                                  <tr>
                                      <td><b>Model</td>
                                      <th>
-                                     '.$car->model;'
+                                     '.$car->model .'
                                      </th>
                                  </tr>
                                  <tr>
                                      <td><b>Price</td>
                                      <th>
-                                     '.$car->price;'
+                                     '.$car->price.'
                                      </th>
                                  </tr>
                                  <tr>
                                      <td><b>PS</td>
                                      <th>
-                                     '.$car->ps;'
+                                     '.$car->ps.'
                                      </th>
                                  </tr>
                                  <tr>
                                      <td><b>Top Speed</td>
                                      <th>
-                                     '.$car->topspeed;'
+                                     '.$car->topspeed.'
                                      </th>
                                  </tr>
                                  <tr>
                                      <td><b>0 To 100</td>
                                      <th>
-                                     '.$car->ztoh;'
+                                     '.$car->ztoh.'
                                      </th>
                                  </tr>
                                  <tr>
                                      <td><b>Fuel</td>
                                      <th>
-                                     '.$car->fuel;'
-                                     </th>
+                                     '.$car->fuel.'
+                                     </th>  
                                  </tr>
                                  <tr>
                                      <td><b>Seats</td>
                                      <th>
-                                     '.$car->seats;'
+                                     '.$car->seats.'
                                      </th>
                                  </tr>
                              </tbody>
