@@ -40,10 +40,59 @@ class DefaultController
         $view->title = 'ComCar';
         $view->heading = '';
         $view->display();
+        $view = str_replace("#{cars.data}", "1. Auto",$view);
+        return $view;
 
     }
-    public function display()
-    {
 
+    public function execute()
+    {
+        $carrepository = new CarRepository();
+        $view=$carrepository->display();
+        return $view;
+
+
+        /*foreach ($result as $i){
+            echo '
+        }
+            <table class="table table-condensed table-bordered neutralize">
+                            <tbody>
+                            <tr>
+                                <td><b>Brand</td>
+                                <th>
+
+                                </th>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                        <div class="panel-tail">
+                            <h4>More Details</h4>
+                            <input type="button" value="+" class="showmore" data-toggle="" data-target="#navbar" aria-expanded="false" aria-controls="addcar">
+                            </input>
+                        </div>
+                    </div>'
+        }*/
+
+        if(isset($_REQUEST['brandname'])){
+            $brandname = $_REQUEST['brandname'];
+        }
+        else{
+            $place = "";
+        }
+        if(isset($_REQUEST['Model'])){
+            $model = $_REQUEST['Model'];
+        }
+        else {
+            $model = "";
+        }
+
+
+
+        $carrepository = new CarRepository();
+        $tableresult = $carrepository->display();
+        return $tableresult;
     }
 }

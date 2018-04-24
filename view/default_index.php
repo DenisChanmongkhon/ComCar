@@ -77,64 +77,20 @@
                             <option value="RS100">RS100</option>
                         </select>
                         <input type="submit" name="submit" class="submit" value="Select"/>
-                        <br/>
-                        <table class="table table-condensed table-bordered neutralize">
-                            <tbody>
-                            <tr>
-                                <td><b>Brand</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-                            <tr>
-                                <td><b>Model</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-                            <tr>
-                                <td><b>Ps</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-                            <tr>
-                                <td><b>Topspeed</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-                            <tr>
-                                <td><b>0 to 100</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-                            <tr>
-                                <td><b>Fuel</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-                            <tr>
-                                <td><b>Seats</td>
-                                <th>
-                                    Volvo
-                                </th>
-                            </tr>
-
-
-                            </tbody>
-                        </table>
 
                     </div>
-                        <div class="panel-tail">
-                            <h4>More Details</h4>
-                            <input type="button" value="+" class="showmore" data-toggle="" data-target="#navbar" aria-expanded="false" aria-controls="addcar">
-                            </input>
-                        </div>
-                    </div>
+                    <table border='1'>
+                        <td><b>Brand</td><td><b>model</td><td><b>price</td><td><b>ps</td><td><b>Topspeed</td><td><b>0 To 100</td><td><b>Fuel</td><td><b>Seats</td>
+                        #{cars.data}
+                        <?php $tableresult ?>
+                    </table>
+                </div>
+
     <input type="button" value="+" class="addcomparison" data-toggle="" data-target="#navbar" aria-expanded="false" aria-controls="addcar">
 
     </input>
+
+
+
+
 </article>

@@ -179,8 +179,9 @@ li a:hover {
   width: 70px;
   height: 70px;
   float: right;
-  margin-top: -350px;
+  margin-top: -15%;
   margin-right:20%;
+  position: relative;
 }
 .showmore {
   float: right;

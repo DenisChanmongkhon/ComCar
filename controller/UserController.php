@@ -9,12 +9,12 @@ class UserController
 {
     public function index()
     {
-        $userRepository = new UserRepository();
+        $carRepository = new CarRepository();
 
         $view = new View('user_index');
         $view->title = 'Benutzer';
         $view->heading = 'Benutzer';
-        $view->users = $userRepository->readAll();
+        $view->users = $carRepository->readAll();
         $view->display();
     }
 
