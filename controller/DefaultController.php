@@ -44,7 +44,12 @@ class DefaultController
 
 
     }
+    public function addForm(){
 
+        $view = new View('default_index');
+        $view->display();;
+
+    }
     public function doShow()
     {
         if(isset($_POST['brandname'])){

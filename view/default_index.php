@@ -72,7 +72,7 @@
             <?php
             if (isset($_POST['submit'])) {
                 echo '
-                    <table class="table table-condensed table-bordered neutralize">
+                    <table class="table">
                              <tbody>
                                  <tr>
                                      <td><b>Brandname</td>
@@ -122,24 +122,18 @@
                                  </tr>
                              </tbody>
                          </table>
-                               
+                     <style>.panel{height: 600px;}
+                     }
+                     .submit{disabled}</style>     
                     ';
             }
             ?>
-                       </div>
-                           <div class="panel-tail">
-                               <h4>More Details</h4>
-                               <input type="button" value="+" class="showmore" data-toggle="" data-target="#navbar" aria-expanded="false" aria-controls="addcar">
-                               </input>
-                           </div>
-                       </div>
             <!--<table border='1'>
                        <td><b>Brand</td><td><b>model</td><td><b>price</td><td><b>ps</td><td><b>Topspeed</td><td><b>0 To 100</td><td><b>Fuel</td><td><b>Seats</td>
                 </table> -->
         </form>
     </div>
 
-    <input type="button" value="+" class="addcomparison" data-toggle="" data-target="#navbar" aria-expanded="false" aria-controls="addcar">
-    </input>
+<button class="addcomparison" s></button>
 
 </article>
