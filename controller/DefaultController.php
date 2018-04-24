@@ -1,5 +1,6 @@
 <?php
 
+require_once '../repository/CarRepository.php';
 /**
  * Der Controller ist der Ort an dem es für jede Seite, welche der Benutzer
  * anfordern kann eine Methode gibt, welche die dazugehörende Businesslogik
@@ -33,66 +34,38 @@ class DefaultController
      */
     public function index()
     {
-        // In diesem Fall möchten wir dem Benutzer die View mit dem Namen
-        //   "default_index" rendern. Wie das genau funktioniert, ist in der
-        //   View Klasse beschrieben.
+
         $view = new View('default_index');
         $view->title = 'ComCar';
         $view->heading = '';
-        $view->display();
-        $view = str_replace("#{cars.data}", "1. Auto",$view);
+        $view->display();;
+
         return $view;
+
 
     }
 
-    public function execute()
+    public function doShow()
     {
-        $carrepository = new CarRepository();
-        $view=$carrepository->display();
-        return $view;
-
-
-        /*foreach ($result as $i){
-            echo '
-        }
-            <table class="table table-condensed table-bordered neutralize">
-                            <tbody>
-                            <tr>
-                                <td><b>Brand</td>
-                                <th>
-
-                                </th>
-
-
-                            </tbody>
-                        </table>
-
-                    </div>
-                        <div class="panel-tail">
-                            <h4>More Details</h4>
-                            <input type="button" value="+" class="showmore" data-toggle="" data-target="#navbar" aria-expanded="false" aria-controls="addcar">
-                            </input>
-                        </div>
-                    </div>'
-        }*/
-
-        if(isset($_REQUEST['brandname'])){
-            $brandname = $_REQUEST['brandname'];
+        if(isset($_POST['brandname'])){
+            $brandname = $_POST['brandname'];
         }
         else{
-            $place = "";
+            $brandname = "";
         }
-        if(isset($_REQUEST['Model'])){
-            $model = $_REQUEST['Model'];
+        if(isset($_POST['Model'])){
+            $model = $_POST['Model'];
         }
         else {
             $model = "";
         }
 
+        $view = new View('default_index');
+        $carRepository = new CarRepository();
+        $view->car = $carRepository->display($brandname, $model);
+        $view->title = 'ComCar';
+        $view->heading = '';
+        $view->display();
 
-
-        $carrepository = new CarRepository();
-        $tableresult = $carrepository->display();
-        return $tableresult;
     }
 }

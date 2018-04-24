@@ -45,34 +45,22 @@ class CarRepository extends Repository
         return $statement->insert_id;
     }*/
 
-    public function display()
+    public function display($brandname, $model)
     {
-        $brandname = $_POST['brandname'];
-        $model = $_POST['model'];
-        $query = "SELECT * FROM $this->tableName WHERE brandname = ? AND model = ?";
+
+        $query = "SELECT * FROM $this->tableName WHERE brandname = ?";
         $statement = ConnectionHandler::getConnection()->prepare($query);
 
-        $statement->bind_param('ss', $brandname, $model);
-
-        if (!$statement->execute()) {
-            throw new Exception($statement->error);
-        }
-
+        $statement->bind_param('s', $brandname);
+        $statement->execute();
         $result = $statement->get_result();
 
-        if($result->num_rows == 0){
-            return false;
+        if(!$result){
+            throw new Exception($statement->error);
         }
-
-        $tableresult = $result->fetch_object();
-
-        if($tableresult){
-            return true;
-
-        }
-
-
-        return false;
+        $row = $result->fetch_object();
+        $result->close();
+        return $row;
 
     }
 }
