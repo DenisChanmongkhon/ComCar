@@ -36,7 +36,7 @@
                     <table class="table">
                              <tbody>
                                  <tr>
-                                     <td><b>Brandname</td>
+                                     <td><b>Make</td>
                                      <th>' .$car->brandname . '</th>
                                  </tr>
                                  <tr>
@@ -46,25 +46,25 @@
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>Price</td>
+                                     <td><b>Price in $</td>
                                      <th>
                                      '.$car->price.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>PS</td>
+                                     <td><b>HP / PS</td>
                                      <th>
                                      '.$car->ps.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>Top Speed</td>
+                                     <td><b>Top Speed in km/h</td>
                                      <th>
                                      '.$car->topspeed.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>0 To 100</td>
+                                     <td><b>0 To 100km/h</td>
                                      <th>
                                      '.$car->ztoh.'
                                      </th>
