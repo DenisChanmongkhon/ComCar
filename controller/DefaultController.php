@@ -38,8 +38,12 @@ class DefaultController
         //   View Klasse beschrieben.
         $view = new View('default_index');
         $view->title = 'ComCar';
-        $view->heading = 'Main Page';
+        $view->heading = '';
         $view->display();
+
+    }
+    public function display()
+    {
 
     }
 }

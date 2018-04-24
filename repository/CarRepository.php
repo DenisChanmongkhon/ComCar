@@ -49,7 +49,7 @@ class CarRepository extends Repository
     {
         $brandname = $_POST['brandname'];
         $model = $_POST['model'];
-        $query = "SELECT password FROM $this->tableName WHERE brandname = ? AND model = ?";
+        $query = "SELECT * FROM $this->tableName WHERE brandname = ? AND model = ?";
         $statement = ConnectionHandler::getConnection()->prepare($query);
 
         $statement->bind_param('ss', $brandname, $model);
@@ -64,11 +64,13 @@ class CarRepository extends Repository
             return false;
         }
 
-        $user = $result->fetch_object();
-        if(password_verify($password,$user->password)){
+        $tableresult = $result->fetch_object();
 
+        if($tableresult){
             return true;
+
         }
+
 
         return false;
 

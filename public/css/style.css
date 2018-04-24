@@ -6,6 +6,10 @@ body{
   padding: 0;
   background-color: #E7E7EA;
 }
+h4{
+  width: 110px;
+  float: left;
+}
 a:hover{
   color: #E7E7EA;
 }
@@ -16,7 +20,10 @@ a:hover{
 .login_title{
   color: white;
 }
-
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 0px;
+}
 .navbar-header{
   background-color: #E7E7EA;
   height: 100px;
@@ -124,18 +131,14 @@ li a:hover {
   padding-top: 10px;
 
 }
-.btn {
-  font-size: 14px;
-  margin: 0 .5em;
+.addcomparison ,.showmore ,.submit {
+  font-size: 12px;
   border-radius: 2em;
-  padding: 0.75em 1.5em;
   cursor: pointer;
   background: none;
   color: #A9A9AC;
   border: 1px solid;
-  letter-spacing: 1px;
   font-family: 'Maven Pro', sans-serif;
-  transition: 250ms ease-out;
 }
 
 #login{
@@ -148,25 +151,43 @@ li a:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
+.submit{
+  height: 20px;
+  width: 70px;
+  float:right;
+}
+
 .panel{
   max-width: 400px;
   margin: 0 auto;
   padding: 15px;
 }
+
+.panel-top{
+  height: 250px;
+}
+
 .panel-body{
-  width:300px;
+  width:100%;
 
 }
+.panel-tail{
+  height: 70px;
+}
 .addcomparison{
-  width: 30px;
-  height: 30px;
+  font-size:30px;
+  width: 70px;
+  height: 70px;
   float: right;
-  margin-right: 100px;
+  margin-top: -350px;
+  margin-right:20%;
 }
 .showmore {
   float: right;
   width: 30px;
   height: 30px;
+  margin-right: 180px;
+  font-size: 20px;
 }
 .Table {
   display: block;
