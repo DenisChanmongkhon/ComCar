@@ -47,6 +47,7 @@ class DefaultController
     public function addForm(){
 
         $view = new View('default_index');
+        $view->heading = '';
         $view->display();;
 
     }

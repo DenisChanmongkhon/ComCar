@@ -1,3 +1,5 @@
+
+
 <?php
 if (isset($_POST['submit'])) {
     $selectedCar =$car->brandname;
@@ -5,10 +7,10 @@ if (isset($_POST['submit'])) {
     $selectedCar = "Audi";
 }
 ?>
-<article class="hreview open special">
-    <div class="panel panel-default">
-        <form method="POST" action="/default/doShow">
-            <div class="panel-body">
+                <div class="container">
+                    <div class="panel panel-default">
+                        <form method="POST" id="form" action="/default/doShow">
+                            <div class="panel-top">
                 <select name="brandname">
                     <option <?php if($selectedCar == 'Audi'){echo("selected");}?> value="Audi">Audi</option>
                     <option <?php if($selectedCar == 'Lamborghini'){echo("selected");}?> value="Lamborghini">Lamborghini</option>
@@ -23,16 +25,25 @@ if (isset($_POST['submit'])) {
                     <option value="Model X">Model X</option>
                     <option value="AMG GT">AMG GT</option>
                 </select><input type="submit" name="submit" class="submit" value="Select"/>
-            </div>
+
+
             <?php
             if (isset($_POST['submit'])) {
                 echo '
+<<<<<<< HEAD
                     <div>
                         <a data href=" '. $car->path .' ">
+=======
+                    
+                        <a data-fancybox="gallery" href=" '. $car->path .' ">
+
+                    
+                        <a id="single_image" href=" '. $car->path .' ">
+>>>>>>> db01904a914c663a3ddad463b2f538e3091134aa
                             <img src=" '. $car->path .' " alt="" style="width:370px" />
                         </a>
-                    </div>
-
+            </div>
+                    <div class="panel-bottom">
                     <table class="table">
                              <tbody>
                                  <tr>
@@ -83,19 +94,23 @@ if (isset($_POST['submit'])) {
                                  </tr>
                              </tbody>
                          </table>
-                     <style>.panel{height: 600px;}
-                     }
-                     .submit{disabled}</style>     
+                     <style>.panel{height: 650px;}
+                     .panel-top{min-height: 300px;
+                     max-height:400px;}
+                     
+                     </style>     
                     ';
             }
             ?>
-            <!--<table border='1'>
-                       <td><b>Brand</td><td><b>model</td><td><b>price</td><td><b>ps</td><td><b>Topspeed</td><td><b>0 To 100</td><td><b>Fuel</td><td><b>Seats</td>
-                </table> -->
+            </div>
         </form>
     </div>
+    <form method="GET" id="form" action="/default/addForm">
+        <div class="addform">
+            <button class="addcomparison" >+</button>
+        </div>
+    </form>
 
 
+</div>
 
-</article>
-<button class="addcomparison"></button>
