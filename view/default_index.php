@@ -4,8 +4,8 @@
 
             <h1><?php $carname ?></h1
         </div>
-        <form method="POST" action="/default/doShow">
-            <div class="panel-body">
+        <form method="POST" id="form" action="/default/doShow">
+            <div class="panel-top">
                 <select name="brandname">
                     <option value="Audi">Audi</option>
                     <option value="Lamborghini">Lamborghini</option>
@@ -20,16 +20,17 @@
                     <option value="XR-80">XR</option>
                     <option value="RS100">RS100</option>
                 </select><input type="submit" name="submit" class="submit" value="Select"/>
-            </div>
+
+
             <?php
             if (isset($_POST['submit'])) {
                 echo '
-                    <div>
+                    
                         <a data-fancybox="gallery" href=" '. $car->path .' ">
                             <img src=" '. $car->path .' " alt="" style="width:370px" />
                         </a>
                     </div>
-
+                    <div class="panel-bottom">
                     <table class="table">
                              <tbody>
                                  <tr>
@@ -80,19 +81,23 @@
                                  </tr>
                              </tbody>
                          </table>
-                     <style>.panel{height: 600px;}
-                     }
-                     .submit{disabled}</style>     
+                     <style>.panel{height: 650px;}
+                     .panel-top{min-height: 300px;
+                     max-height:400px;}
+                     
+                     </style>     
                     ';
             }
             ?>
-            <!--<table border='1'>
-                       <td><b>Brand</td><td><b>model</td><td><b>price</td><td><b>ps</td><td><b>Topspeed</td><td><b>0 To 100</td><td><b>Fuel</td><td><b>Seats</td>
-                </table> -->
+            </div>
         </form>
     </div>
 
 
 
 </article>
-<button class="addcomparison"></button>
+<form method="GET" id="form" action="/default/addForm">
+
+    <button class="addcomparison" ></button>
+
+</form>

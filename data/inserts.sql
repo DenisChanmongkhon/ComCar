@@ -30,11 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cars` (
   `id` int(11) NOT NULL,
-<<<<<<< Updated upstream
   `path` VARCHAR(50) NOT NULL,
-=======
-  `path` varchar(50) NOT NULL,
->>>>>>> Stashed changes
   `price` int(50) NOT NULL,
   `ps` int(50) NOT NULL,
   `topspeed` int(50) NOT NULL,
@@ -50,7 +46,7 @@ CREATE TABLE `cars` (
 --
 
 INSERT INTO `cars` (`id`, `path`, `price`, `ps`, `topspeed`, `ztoh`, `fuel`, `seats`, `brandname`, `model`) VALUES
-(1, '', 203295, 631, 325, 2.3, 'Benzin', 2, 'Lamborghini', 'Huracan'),
+(1, '/images/huracan.png', 203295, 631, 325, 2.3, 'Benzin', 2, 'Lamborghini', 'Huracan'),
 (2, '', 114875, 605, 305, 3.2, 'Benzin', 5, 'Audi', 'RS7'),
 (3, '', 86050, 330, 263, 4.7, 'Benzin', 5, 'Porsche', 'Panamera'),
 (4, '', 113395, 503, 310, 3, 'Benzin', 2, 'Mercedes', 'AMG GT'),
