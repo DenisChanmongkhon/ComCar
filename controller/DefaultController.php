@@ -49,7 +49,6 @@ class DefaultController
         $view = new View('default_index');
         $view->heading = '';
         $view->display();;
-        $view->display();;
 
     }
     public function doShow()

@@ -114,7 +114,6 @@ a:hover{
   padding: 15px;
   float: left;
   margin-left: 150px;
-  margin-right: 150px;
 }
 
 .panel-top{
@@ -149,73 +148,11 @@ a:hover{
   width: 100%;
   margin: 1em 0;
 }
-
-.Table thead, .Table tbody, .Table thead tr, .Table th {
-  display: block;
+.addform{
+  height: 200px;
+  width: 200px;
 }
-
-.Table thead {
-  float: left;
-}
-
-.Table tbody {
-  width: auto;
-  position: relative;
-  overflow-x: auto;
-}
-
-.Table td, .dataTable th {
-  padding: .625em;
-  line-height: 1.5em;
-  border-bottom: 1px dashed #ccc;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.Table th {
-  text-align: left;
-  background: rgba(0, 0, 0, 0.14);
-  border-bottom: 1px dashed #aaa;
-}
-
-.Table tbody tr {
-  display: table-cell;
-}
-
-.Table tbody td {
-  display: block;
-}
-
-.Table tr:nth-child(odd) {
-  background: rgba(0, 0, 0, 0.07);
-}
-
 @media screen and (min-width: 50em) {
 
-  .Table {
-    display: table;
-  }
-
-  .Table thead {
-    display: table-header-group;
-    float: none;
-  }
-
-  .Table tbody {
-    display: table-row-group;
-  }
-
-  .Table thead tr, .dataTable tbody tr {
-    display: table-row;
-  }
-
-  .Table th, .dataTable tbody td {
-    display: table-cell;
-  }
-
-  .Table td, .dataTable th {
-    width: auto;
-  }
 
 }

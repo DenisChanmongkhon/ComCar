@@ -47,10 +47,10 @@ CREATE TABLE `cars` (
 
 INSERT INTO `cars` (`id`, `path`, `price`, `ps`, `topspeed`, `ztoh`, `fuel`, `seats`, `brandname`, `model`) VALUES
 (1, '/images/huracan.png', 203295, 631, 325, 2.3, 'Benzin', 2, 'Lamborghini', 'Huracan'),
-(2, '', 114875, 605, 305, 3.2, 'Benzin', 5, 'Audi', 'RS7'),
-(3, '', 86050, 330, 263, 4.7, 'Benzin', 5, 'Porsche', 'Panamera'),
-(4, '', 113395, 503, 310, 3, 'Benzin', 2, 'Mercedes', 'AMG GT'),
-(5, '', 148600, 773, 250, 3.1, 'Electro', 7, 'Tesla', 'Model X');
+(2, '/images/audirs7.jpg', 114875, 605, 305, 3.2, 'Benzin', 5, 'Audi', 'RS7'),
+(3, '/images/porschepanamera.png', 86050, 330, 263, 4.7, 'Benzin', 5, 'Porsche', 'Panamera'),
+(4, '/images/mercamggt.jpg', 113395, 503, 310, 3, 'Benzin', 2, 'Mercedes', 'AMG GT'),
+(5, '/images/teslamodelx.jpg', 148600, 773, 250, 3.1, 'Electro', 7, 'Tesla', 'Model X');
 
 --
 -- Indizes der exportierten Tabellen

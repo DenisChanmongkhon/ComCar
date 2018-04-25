@@ -1,11 +1,9 @@
-<article class="hreview open special">
+<div class="container">
     <div class="panel panel-default">
-        <div class="panel-top">
 
-            <h1><?php $carname ?></h1
-        </div>
         <form method="POST" id="form" action="/default/doShow">
             <div class="panel-top">
+
                 <select name="brandname">
                     <option value="Audi">Audi</option>
                     <option value="Lamborghini">Lamborghini</option>
@@ -16,9 +14,9 @@
                 <select name="model">
                     <option value="Huracan">Huracan</option>
                     <option value="Panamera">Panamera</option>
-                    <option value="GT-100">GT-100</option>
-                    <option value="XR-80">XR</option>
-                    <option value="RS100">RS100</option>
+                    <option value="RS7">RS7</option>
+                    <option value="Model X">Model X</option>
+                    <option value="AMG GT">AMG GT</option>
                 </select><input type="submit" name="submit" class="submit" value="Select"/>
 
 
@@ -27,9 +25,12 @@
                 echo '
                     
                         <a data-fancybox="gallery" href=" '. $car->path .' ">
+
+                    
+                        <a id="single_image" href=" '. $car->path .' ">
                             <img src=" '. $car->path .' " alt="" style="width:370px" />
                         </a>
-                    </div>
+            </div>
                     <div class="panel-bottom">
                     <table class="table">
                              <tbody>
@@ -92,12 +93,12 @@
             </div>
         </form>
     </div>
+    <form method="GET" id="form" action="/default/addForm">
+        <div class="addform">
+            <button class="addcomparison" >+</button>
+        </div>
+    </form>
 
 
+</div>
 
-</article>
-<form method="GET" id="form" action="/default/addForm">
-
-    <button class="addcomparison" ></button>
-
-</form>
