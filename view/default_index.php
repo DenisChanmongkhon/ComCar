@@ -1,6 +1,8 @@
 <?php
 if (isset($_POST['submit'])) {
     $selectedCar =$car->brandname;
+} else {
+    $selectedCar = "Audi";
 }
 ?>
 <article class="hreview open special">
@@ -26,7 +28,7 @@ if (isset($_POST['submit'])) {
             if (isset($_POST['submit'])) {
                 echo '
                     <div>
-                        <a id="single_image" href=" '. $car->path .' ">
+                        <a data href=" '. $car->path .' ">
                             <img src=" '. $car->path .' " alt="" style="width:370px" />
                         </a>
                     </div>
