@@ -1,16 +1,7 @@
 <article class="hreview open special">
     <div class="panel panel-default">
         <div class="panel-top">
-            <div>
-                <a data-fancybox="gallery" href="../images/huracan.png">
-                    <img src="/images/huracan.png" alt="pic couldnt load" style="width:370px" />
-                </a>
-            </div>
-            <div class="hidden">
-                <a data-fancybox="gallery" href="../images/special.png">
-                    <img src="../images/special.png" alt=""/>
-                </a>
-            </div>
+
             <h1><?php $carname ?></h1
         </div>
         <form method="POST" action="/default/doShow">
@@ -24,7 +15,7 @@
                 </select>
                 <select name="model">
                     <option value="Huracan">Huracan</option>
-                    <option value="MX-900">MX-900</option>
+                    <option value="Panamera">Panamera</option>
                     <option value="GT-100">GT-100</option>
                     <option value="XR-80">XR</option>
                     <option value="RS100">RS100</option>
@@ -33,6 +24,12 @@
             <?php
             if (isset($_POST['submit'])) {
                 echo '
+                    <div>
+                        <a data-fancybox="gallery" href=" '. $car->path .' ">
+                            <img src=" '. $car->path .' " alt="" style="width:370px" />
+                        </a>
+                    </div>
+
                     <table class="table">
                              <tbody>
                                  <tr>
