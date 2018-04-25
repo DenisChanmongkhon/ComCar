@@ -13,7 +13,7 @@
             </div>
             <h1><?php $carname ?></h1
         </div>
-        <form method="POST" action="default/doShow">
+        <form method="POST" action="/default/doShow">
             <div class="panel-body">
                 <select name="brandname">
                     <option value="Audi">Audi</option>
@@ -95,6 +95,7 @@
         </form>
     </div>
 
-<button class="addcomparison" s></button>
+
 
 </article>
+<button class="addcomparison"></button>

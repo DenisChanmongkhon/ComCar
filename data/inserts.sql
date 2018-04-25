@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cars` (
   `id` int(11) NOT NULL,
-  `path` int(11) NOT NULL,
+  `path` VARCHAR(50) NOT NULL,
   `price` int(50) NOT NULL,
   `ps` int(50) NOT NULL,
   `topspeed` int(50) NOT NULL,

@@ -133,9 +133,9 @@ a:hover{
   width: 70px;
   height: 70px;
   float: right;
-  margin-top: -15%;
-  margin-right:20%;
-  position: relative;
+  margin-right:30%;
+  margin-top:10%;
+
 }
 .showmore {
   float: right;
