@@ -1,15 +1,20 @@
-<div class="container">
-    <div class="panel panel-default">
 
-        <form method="POST" id="form" action="/default/doShow">
-            <div class="panel-top">
 
+<?php
+if (isset($_POST['submit'])) {
+    $selectedCar =$car->brandname;
+}
+?>
+                <div class="container">
+                    <div class="panel panel-default">
+                        <form method="POST" id="form" action="/default/doShow">
+                            <div class="panel-top">
                 <select name="brandname">
-                    <option value="Audi">Audi</option>
-                    <option value="Lamborghini">Lamborghini</option>
-                    <option value="Mercedes">Mercedes</option>
-                    <option value="Porsche">Porsche</option>
-                    <option value="Tesla">Tesla</option>
+                    <option <?php if($selectedCar == 'Audi'){echo("selected");}?> value="Audi">Audi</option>
+                    <option <?php if($selectedCar == 'Lamborghini'){echo("selected");}?> value="Lamborghini">Lamborghini</option>
+                    <option <?php if($selectedCar == 'Mercedes'){echo("selected");}?> value="Mercedes">Mercedes</option>
+                    <option <?php if($selectedCar == 'Porsche'){echo("selected");}?> value="Porsche">Porsche</option>
+                    <option <?php if($selectedCar == 'Tesla'){echo("selected");}?> value="Tesla">Tesla</option>
                 </select>
                 <select name="model">
                     <option value="Huracan">Huracan</option>
