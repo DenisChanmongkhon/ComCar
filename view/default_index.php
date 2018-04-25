@@ -1,17 +1,18 @@
+<?php
+if (isset($_POST['submit'])) {
+    $selectedCar =$car->brandname;
+}
+?>
 <article class="hreview open special">
     <div class="panel panel-default">
-        <div class="panel-top">
-
-            <h1><?php $carname ?></h1
-        </div>
         <form method="POST" action="/default/doShow">
             <div class="panel-body">
                 <select name="brandname">
-                    <option value="Audi">Audi</option>
-                    <option value="Lamborghini">Lamborghini</option>
-                    <option value="Mercedes">Mercedes</option>
-                    <option value="Porsche">Porsche</option>
-                    <option value="Tesla">Tesla</option>
+                    <option <?php if($selectedCar == 'Audi'){echo("selected");}?> value="Audi">Audi</option>
+                    <option <?php if($selectedCar == 'Lamborghini'){echo("selected");}?> value="Lamborghini">Lamborghini</option>
+                    <option <?php if($selectedCar == 'Mercedes'){echo("selected");}?> value="Mercedes">Mercedes</option>
+                    <option <?php if($selectedCar == 'Porsche'){echo("selected");}?> value="Porsche">Porsche</option>
+                    <option <?php if($selectedCar == 'Tesla'){echo("selected");}?> value="Tesla">Tesla</option>
                 </select>
                 <select name="model">
                     <option value="Huracan">Huracan</option>
