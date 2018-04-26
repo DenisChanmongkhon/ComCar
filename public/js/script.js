@@ -10,12 +10,6 @@ $(function () {
             newNum  = new Number(num + 1),      // The numeric ID of the new input field being added, increasing by 1 each time
             newElem = $('#entry' + num).clone().attr('id', 'entry' + newNum).fadeIn('slow'); // create the new element via clone(), and manipulate it's ID using newNum value
 
-        /*  This is where we manipulate the name/id values of the input inside the new, cloned element
-            Below are examples of what forms elements you can clone, but not the only ones.
-            There are 2 basic structures below: one for an H2, and one for form elements.
-            To make more, you can copy the one for form elements and simply update the classes for its label and input.
-            Keep in mind that the .val() method is what clears the element when it gets cloned. Radio and checkboxes need .val([]) instead of .val('').
-        */
         // Label for email field
         newElem.find('.panel-top').attr('id', 'ID' + newNum + '_reference').attr('name', 'ID' + newNum + '_reference').html('Email #' + newNum);
 

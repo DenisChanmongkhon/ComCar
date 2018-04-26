@@ -11,11 +11,18 @@ else{
 <script type="text/javascript" src="js/script.js"></script>
 <script>
     $(document).ready(function(e) {
+        $("#addnewForm").click(function(e) {
 
+            var html ="";
+
+                $("#completeForm").append(html)
+        });
     })
 
-
 </script>
+
+
+
 <div class="container" id="completeForm">
      <div class="panel panel-container" id="entry1">
            <form method="POST" id="form" action="/default/doShow">
@@ -28,9 +35,9 @@ else{
                     <option <?php if($selectedBrand == 'Porsche'){echo("selected");}?> value="Porsche">Porsche</option>
                     <option <?php if($selectedBrand == 'Tesla'){echo("selected");}?> value="Tesla">Tesla</option>
                 </select>
-                <select name="model">
-                    <option <?php if($selectedModel == 'Huracan'){echo("selected");}?>value="Huracan">Huracan</option>
-                    <option <?php if($selectedModel == 'Panamera'){echo("selected");}?> value="Panamera">Panamera</option>
+                    <select name="model">
+                        <option <?php if($selectedModel == 'Huracan'){echo("selected");}?>value="Huracan">Huracan</option>
+                        <option <?php if($selectedModel == 'Panamera'){echo("selected");}?> value="Panamera">Panamera</option>
                     <option <?php if($selectedModel == 'RS7'){echo("selected");}?> value="RS7">RS7</option>
                     <option <?php if($selectedModel == 'Model X'){echo("selected");}?> value="Model ">Model X</option>
                     <option <?php if($selectedModel == 'AMG GT'){echo("selected");}?> value="AMG GT">AMG GT</option>
