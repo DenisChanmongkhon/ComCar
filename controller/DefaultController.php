@@ -96,9 +96,9 @@ class DefaultController
             $model = "";
         }
 
-        $view = new View('default_index2');
+        $view = new View('default_index');
         $carRepository = new CarRepository();
-        $view->car2 = $carRepository->display($brandname, $model);
+        $view->car = $carRepository->display($brandname, $model);
         $view->title = 'ComCar';
         $view->heading = '';
         $view->display();
