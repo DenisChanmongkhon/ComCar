@@ -21,9 +21,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="default_index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default_index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/default_index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="255">
+              <caret line="24" column="91" lean-forward="true" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="306">
@@ -59,6 +63,7 @@
             <state relative-caret-position="238">
               <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
 >>>>>>> 75b3dc6a0a598ca3193bcb5ede11937c1f1f96e4
+>>>>>>> db01904a914c663a3ddad463b2f538e3091134aa
             </state>
           </provider>
         </entry>
@@ -83,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CarRepository.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CarRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/repository/CarRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+            <state relative-caret-position="303">
+              <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -258,11 +263,15 @@
 =======
       <workItem from="1524638354219" duration="979000" />
 <<<<<<< HEAD
+      <workItem from="1524639718451" duration="4008000" />
+=======
+<<<<<<< HEAD
       <workItem from="1524639718451" duration="684000" />
 >>>>>>> 63a9d543c06ab2dc731e1e9d604ed44f94ba4fd3
 =======
       <workItem from="1524639718451" duration="2372000" />
 >>>>>>> 75b3dc6a0a598ca3193bcb5ede11937c1f1f96e4
+>>>>>>> db01904a914c663a3ddad463b2f538e3091134aa
     </task>
     <task id="LOCAL-00001" summary="cars script">
       <created>1524471374013</created>
@@ -318,6 +327,9 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="36141000" />
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="33798000" />
 =======
@@ -326,6 +338,7 @@
 =======
     <option name="totallyTimeSpent" value="34505000" />
 >>>>>>> 75b3dc6a0a598ca3193bcb5ede11937c1f1f96e4
+>>>>>>> db01904a914c663a3ddad463b2f538e3091134aa
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="903" extended-state="6" />
@@ -377,7 +390,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/view/default_index.php</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -800,10 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/CarRepository.php">
+    <entry file="file://$PROJECT_DIR$/view/default_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="24" column="91" lean-forward="true" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -820,8 +833,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/default_index.php">
+    <entry file="file://$PROJECT_DIR$/repository/CarRepository.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="303">
+          <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="306">
@@ -857,6 +874,7 @@
         <state relative-caret-position="238">
           <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
 >>>>>>> 75b3dc6a0a598ca3193bcb5ede11937c1f1f96e4
+>>>>>>> db01904a914c663a3ddad463b2f538e3091134aa
         </state>
       </provider>
     </entry>
