@@ -75,7 +75,7 @@ class DefaultController
 
         $view = new View('default_index');
         $carRepository = new CarRepository();
-        $view->car = $carRepository->display($brandname, $model);
+        $view->car = $carRepository->display($brandname,$model);
         $view->title = 'ComCar';
         $view->heading = '';
         $view->display();
@@ -83,22 +83,23 @@ class DefaultController
     }
     public function doShow2()
     {
+
         if(isset($_POST['brandname2'])){
-            $brandname = $_POST['brandname2'];
+            $brandname2 = $_POST['brandname2'];
         }
         else{
-            $brandname = "";
+            $brandname2 = "";
         }
         if(isset($_POST['Model2'])){
-            $model = $_POST['Model2'];
+            $model2 = $_POST['Model2'];
         }
         else {
-            $model = "";
+            $model2 = "";
         }
 
         $view = new View('default_index');
         $carRepository = new CarRepository();
-        $view->car = $carRepository->display($brandname, $model);
+        $view->car2 = $carRepository->display2($brandname2,$model2);
         $view->title = 'ComCar';
         $view->heading = '';
         $view->display();
