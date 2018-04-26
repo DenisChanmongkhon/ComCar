@@ -58,47 +58,47 @@ else{
                     <table class="table">
                              <tbody>
                                  <tr>
-                                     <td><b>Make</td>
+                                     <td><b>Marke</td>
                                      <th>' .$car->brandname . '</th>
                                  </tr>
                                  <tr>
-                                     <td><b>Model</td>
+                                     <td><b>Modell</td>
                                      <th>
                                      '.$car->model .'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>Price in $</td>
+                                     <td><b>Preis in $</td>
                                      <th>
                                      '.$car->price.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>HP / PS</td>
+                                     <td><b>PS</td>
                                      <th>
                                      '.$car->ps.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>Top Speed in km/h</td>
+                                     <td><b>Höchstgeschwindigkeit in km/h</td>
                                      <th>
                                      '.$car->topspeed.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>0 To 100km/h</td>
+                                     <td><b>0 bis 100km/h</td>
                                      <th>
                                      '.$car->ztoh.'
                                      </th>
                                  </tr>
                                  <tr>
-                                     <td><b>Fuel</td>
+                                     <td><b>Treibstoff</td>
                                      <th>
                                      '.$car->fuel.'
                                      </th>  
                                  </tr>
                                  <tr>
-                                     <td><b>Seats</td>
+                                     <td><b>Anzahl Sitze</td>
                                      <th>
                                      '.$car->seats.'
                                      </th>
