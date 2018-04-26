@@ -109,11 +109,11 @@ a:hover{
 }
 
 .panel{
-  max-width: 400px;
+  width: 400px;
   margin: 0 auto;
   padding: 15px;
   float: left;
-  margin-left: 150px;
+  margin-left: 160px;
 }
 
 .panel-top{
@@ -126,6 +126,21 @@ a:hover{
 }
 .panel-tail{
   height: 70px;
+}
+.btnArea{
+  width:200px;
+  height: 300px;
+  float:left;
+  margin-left: 15%;
+
+}
+.addcarText{
+  color: dimgrey;
+  font-family: 'Maven Pro', sans-serif;
+  font-size:20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 .addcomparison{
   font-size:30px;

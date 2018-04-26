@@ -46,7 +46,14 @@ class DefaultController
     }
     public function addForm(){
 
-        $view = new View('default_index');
+        $view = new View('default_index2');
+        $view->heading = '';
+        $view->display();;
+
+    }
+    public function addForm2(){
+
+        $view = new View('default_index3');
         $view->heading = '';
         $view->display();;
 
@@ -69,6 +76,52 @@ class DefaultController
         $view = new View('default_index');
         $carRepository = new CarRepository();
         $view->car = $carRepository->display($brandname, $model);
+        $view->title = 'ComCar';
+        $view->heading = '';
+        $view->display();
+
+    }
+    public function doShow2()
+    {
+        if(isset($_POST['brandname2'])){
+            $brandname = $_POST['brandname2'];
+        }
+        else{
+            $brandname = "";
+        }
+        if(isset($_POST['Model2'])){
+            $model = $_POST['Model2'];
+        }
+        else {
+            $model = "";
+        }
+
+        $view = new View('default_index2');
+        $carRepository = new CarRepository();
+        $view->car2 = $carRepository->display($brandname, $model);
+        $view->title = 'ComCar';
+        $view->heading = '';
+        $view->display();
+
+    }
+    public function doShow3()
+    {
+        if(isset($_POST['brandname3'])){
+            $brandname = $_POST['brandname3'];
+        }
+        else{
+            $brandname = "";
+        }
+        if(isset($_POST['Model2'])){
+            $model = $_POST['Model2'];
+        }
+        else {
+            $model = "";
+        }
+
+        $view = new View('default_index3');
+        $carRepository = new CarRepository();
+        $view->car3 = $carRepository->display($brandname, $model);
         $view->title = 'ComCar';
         $view->heading = '';
         $view->display();
