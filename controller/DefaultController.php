@@ -60,29 +60,18 @@ class DefaultController
     }
     public function doShow()
     {
-        if(isset($_POST['brandname'])){
-            $brandname = $_POST['brandname'];
-        }
-        else{
-            $brandname = "";
-        }
-        if(isset($_POST['Model'])){
-            $model = $_POST['Model'];
-        }
-        else {
-            $model = "";
-        }
-
-        $view = new View('default_index');
-        $carRepository = new CarRepository();
-        $view->car = $carRepository->display($brandname,$model);
-        $view->title = 'ComCar';
-        $view->heading = '';
-        $view->display();
-
-    }
-    public function doShow2()
-    {
+            if(isset($_POST['brandname'])){
+                $brandname = $_POST['brandname'];
+            }
+            else{
+                $brandname = "";
+            }
+            if(isset($_POST['Model'])){
+                $model = $_POST['Model'];
+            }
+            else {
+                $model = "";
+            }
 
         if(isset($_POST['brandname2'])){
             $brandname2 = $_POST['brandname2'];
@@ -97,35 +86,39 @@ class DefaultController
             $model2 = "";
         }
 
-        $view = new View('default_index');
-        $carRepository = new CarRepository();
-        $view->car2 = $carRepository->display2($brandname2,$model2);
-        $view->title = 'ComCar';
-        $view->heading = '';
-        $view->display();
-
-    }
-    public function doShow3()
-    {
         if(isset($_POST['brandname3'])){
-            $brandname = $_POST['brandname3'];
+            $brandname3 = $_POST['brandname3'];
         }
         else{
-            $brandname = "";
+            $brandname3 = "";
         }
-        if(isset($_POST['Model2'])){
-            $model = $_POST['Model2'];
+        if(isset($_POST['Model3'])){
+            $model3 = $_POST['Model3'];
         }
         else {
-            $model = "";
+            $model3 = "";
         }
 
-        $view = new View('default_index3');
-        $carRepository = new CarRepository();
-        $view->car3 = $carRepository->display($brandname, $model);
-        $view->title = 'ComCar';
-        $view->heading = '';
-        $view->display();
+        if (isset($_POST['carInfo'])) {
+                $carNumber = $_POST['carInfo'];
+        } else {
+                $carNumber = 3;
+        }
+if ($carNumber == 3) {
+    $view = new View('default_index3');
+} else if ($carNumber == 2) {
+    $view = new View('default_index2');
+} else {
+    $view = new View('default_index');
+}
+            $carRepository = new CarRepository();
+            $view->car = $carRepository->display($brandname, $model);
+            $view->car2 = $carRepository->display($brandname2, $model2);
+            $view->car3 = $carRepository->display($brandname3, $model3);
+            $view->title = 'ComCar';
+            $view->heading = '';
+            $view->display();
 
-    }
+
+}
 }
