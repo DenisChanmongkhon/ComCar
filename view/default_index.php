@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
     #carInfo{display: none;}
 </style>
 
-<div class="container" id="completeForm">
+<div class="container" >
     <form method="POST" id="form" action="/default/doShow">
         <div class="panel panel-container" id="entry1">
             <div class="panel-full">
